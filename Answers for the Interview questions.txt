@@ -1,0 +1,65 @@
+Here are the answers for the interview questions mentioned in the task
+------------------------------------------------------------------------
+
+1. What is normalization?
+Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity. It divides large tables into smaller related tables and defines relationships between them, usually through different normal forms (1NF, 2NF, 3NF, etc.).
+
+2. Explain primary vs foreign key.
+
+Primary Key: A column (or set of columns) that uniquely identifies each record in a table. It cannot contain NULL values and must be unique.
+
+Foreign Key: A column in one table that refers to the primary key of another table, establishing a relationship between the two tables.
+
+3. What are constraints?
+Constraints are rules applied to columns to enforce data integrity in a database. Examples include:
+
+NOT NULL – ensures a column cannot have NULL values.
+
+UNIQUE – ensures all values in a column are different.
+
+PRIMARY KEY – uniquely identifies each row.
+
+FOREIGN KEY – maintains referential integrity.
+
+CHECK – ensures a condition is met.
+
+DEFAULT – assigns a default value if none is provided.
+
+4. What is a surrogate key?
+A surrogate key is a system-generated unique identifier (like an auto-increment number or UUID) used as the primary key instead of using natural data (e.g., email, SSN). It has no business meaning and is only used for identification.
+
+5. How do you avoid data redundancy?
+
+Apply normalization techniques.
+
+Use foreign keys to establish relationships instead of duplicating data.
+
+Design tables with minimal data duplication.
+
+Follow best practices in database schema design.
+
+6. What is ER diagram?
+An Entity-Relationship (ER) Diagram is a visual representation of a database structure. It shows:
+
+Entities (tables)
+
+Attributes (columns)
+
+Relationships (connections between entities)
+
+7. What are the types of relationships in DBMS?
+
+One-to-One (1:1) → One entity relates to only one other entity.
+
+One-to-Many (1:N) → One entity relates to many entities.
+
+Many-to-Many (M:N) → Many entities relate to many others (usually implemented using a junction table).
+
+8. Explain the purpose of AUTO_INCREMENT.
+AUTO_INCREMENT in MySQL automatically generates a unique sequential number for a column (usually the primary key) whenever a new row is inserted, avoiding manual assignment.
+
+9. What is the default storage engine in MySQL?
+The default storage engine in MySQL is InnoDB (since MySQL 5.5). It supports transactions, row-level locking, and foreign keys.
+
+10. What is a composite key?
+A composite key is a primary key that consists of two or more columns combined to uniquely identify a record, especially when a single column alone is not sufficient.
